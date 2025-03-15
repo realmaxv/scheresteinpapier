@@ -1,70 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
- 
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TS-Rock, Paper, Scissors</title>
   </head>
   <body>
-
-
     <div class="wrapper-main">
-
-    <div>
-       
-      
+      <div>
         <fieldset class="runden">
-
-
           <legend>Wieviele Runden?</legend>
 
           <div>
-          <input class="radioBtn" type="radio" id="radio5" name="auswahl" value="5" checked><label for="radio5"> 5 Runden</label>
+            <input
+              class="radioBtn"
+              type="radio"
+              id="radio5"
+              name="auswahl"
+              value="5"
+              checked
+            /><label for="radio5"> 5 Runden</label>
           </div>
           <div>
-          <input class="radioBtn" type="radio" id="radio10" name="auswahl"  value="10"><label for="radio10">10 Runden</label>
-        </div>
-        <div>
-          <input class="radioBtn" type="radio" id="radio15" name="auswahl"  value="15"><label for="radio15">15 Runden</label>
-        </div>
-        <div>
-          <input class="radioBtn" type="radio" id="radio20" name="auswahl"  value="20"><label for="radio20">20 Runden</label>
-        </div>
-  
-      </fieldset>
+            <input
+              class="radioBtn"
+              type="radio"
+              id="radio10"
+              name="auswahl"
+              value="10"
+            /><label for="radio10">10 Runden</label>
+          </div>
+          <div>
+            <input
+              class="radioBtn"
+              type="radio"
+              id="radio15"
+              name="auswahl"
+              value="15"
+            /><label for="radio15">15 Runden</label>
+          </div>
+          <div>
+            <input
+              class="radioBtn"
+              type="radio"
+              id="radio20"
+              name="auswahl"
+              value="20"
+            /><label for="radio20">20 Runden</label>
+          </div>
+        </fieldset>
 
-      <fieldset class="runden2">
-        <div class="überschrift">
-          <p>You</p>
-        <div class="user kreis" id="user"></div>
+        <fieldset class="runden2">
+          <div class="überschrift">
+            <p>You</p>
+            <div class="user kreis" id="user"></div>
+          </div>
+
+          <div class="überschrift">
+            <p>Spielstand</p>
+            <div class="spielstand" id="spielstand">0 : 0</div>
+          </div>
+          <div class="überschrift">
+            <p>Computer</p>
+            <div class="kreis" id="computer"></div>
+          </div>
+        </fieldset>
       </div>
-
-      <div class="überschrift">
-        <p>Spielstand</p>
-        <div class="spielstand" id="spielstand">0 : 0</div>
+      <div>
+        <h1 id="out">Let´s play</h1>
+        <section class="runden2">
+          <div class="kreis token" id="stein"></div>
+          <div class="kreis token" id="papier"></div>
+          <div class="kreis token" id="schere"></div>
+        </section>
+        <h2>MAKE YOUR MOVE</h2>
+        <button class="reset">Restart</button>
       </div>
-       <div class="überschrift">
-        <p>Computer</p>
-        <div class="kreis" id="computer"></div>
-      </div>
-      </fieldset>
-
-
     </div>
-    <div>
-
-      <h1 id="out">Let´s play</h1>
-      <section class="runden2">
-        <div class="kreis token" id="stein"></div>
-        <div class="kreis token" id="papier"></div>
-        <div class="kreis token" id="schere"></div>
-       
-      </section>
-      <h2>MAKE YOUR MOVE</h2>
-      <button class="reset">Restart</button>
-    </div>
-  </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
